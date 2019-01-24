@@ -80,6 +80,6 @@ module.exports = {
     }
   },
   env: {
-    functions: config.env === 'production' ? `${config.url}/.netlify/functions` : 'http://localhost:9000',
+    functions: process.env.NODE_ENV === 'production' ? `https://www.superpass.app/.netlify/functions` : 'http://localhost:9000',
   },
 }
