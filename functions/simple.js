@@ -1,4 +1,3 @@
-'use strict';
 var Sentencer = require('sentencer');
 
 exports.handler = (event, context, callback) => {
