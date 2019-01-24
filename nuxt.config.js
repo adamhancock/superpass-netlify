@@ -80,6 +80,6 @@ module.exports = {
     }
   },
   env: {
-    functions: process.env.NODE_ENV === 'production' ? `/.netlify/functions` : 'http://localhost:9000',
-  },
+    functions: process.env.NODE_ENV === 'production' ? process.env.API_URL : 'http://localhost:9000',
+  }
 }
