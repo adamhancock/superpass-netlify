@@ -21,6 +21,7 @@
       ]),
     },
     mounted: function () {
+      console.log(process.env.functions)
       this.generatePassword()
 
     }
