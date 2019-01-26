@@ -13,7 +13,7 @@ export const mutations = {
 export const actions = {
   generatePassword(context) {
     axios.get(`${process.env.functions}/simple`).then((res) => {
-      context.commit('updatePassword', res.data.password)
+      context.commit('updatePassword', res.data)
     })
 
   }
