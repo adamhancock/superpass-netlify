@@ -15,9 +15,14 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
+    "eslint": "^5.12.1",
+    "natural": "^0.6.3",
     "nuxt": "^2.0.0",
     "sentencer": "^0.1.5",
-    "vuetify": "^1.2.4"
+    "sylvester": "0.0.21",
+    "tar": "^4.4.8",
+    "vuetify": "^1.2.4",
+    "wordnet": "^0.1.2"
   },
   "devDependencies": {
     "eslint-config-prettier": "^3.1.0",
