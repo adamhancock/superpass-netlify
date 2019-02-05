@@ -1,6 +1,6 @@
 import axios from 'axios'
 export const state = () => ({
-  password: "default"
+  password: ""
 })
 
 export const mutations = {
