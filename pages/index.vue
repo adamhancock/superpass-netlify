@@ -1,21 +1,23 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <Password />
-    </v-flex>
-  </v-layout>
+  <div>
+    <v-toolbar app dark color="grey darken-3" flat>
+      <v-toolbar-title class="bangers mx-auto display-1">SUPERPASS!</v-toolbar-title>
+    </v-toolbar>
+    <v-layout column justify-center align-center>
+      <v-flex xs12 sm8 md6>
+        <Password />
+      </v-flex>
+    </v-layout>
+  </div>
 </template>
 
 <script>
-  import Logo from '~/components/Logo.vue'
-  import VuetifyLogo from '~/components/VuetifyLogo.vue'
   import Password from '~/components/Password.vue'
 
 
   export default {
     components: {
-      Logo,
-      VuetifyLogo,
+
       Password
     },
 

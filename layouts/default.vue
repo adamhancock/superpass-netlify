@@ -6,8 +6,9 @@
       </v-container>
     </v-content>
 
-    <v-footer :fixed="fixed" app>
-      <span>&copy; 2017</span>
+    <v-footer color="grey darken-3" dark fixed app>
+      <span class="white--text mx-auto"> <a id="adamhancock" href="https://www.adamhancock.co.uk">
+          Adam Hancock</a></span>
     </v-footer>
   </v-app>
 </template>
@@ -39,3 +40,15 @@
   }
 
 </script>
+<style>
+  #adamhancock {
+    text-decoration-line: none;
+    color: gray;
+  }
+
+  #adamhancock:hover {
+    text-decoration-line: none;
+    color: white;
+  }
+
+</style>
