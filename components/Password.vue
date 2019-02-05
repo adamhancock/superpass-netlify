@@ -1,6 +1,6 @@
 <template>
   <span>
-    <v-text-field :value="password" flat class="centered-input" />
+    <v-text-field :value="password" flat class="title centered-input" />
 
     <v-btn id="buttons" class="headline blue white--text mx-auto bangers" large v-on:click="generatePassword()">
       <v-icon>refresh</v-icon>Refresh
