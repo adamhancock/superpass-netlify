@@ -1,4 +1,10 @@
 const pkg = require('./package')
+const features = [
+  'fetch',
+  'Object.entries',
+  'Object.values',
+  'IntersectionObserver'
+].join('%2C')
 
 module.exports = {
   mode: 'spa',
@@ -6,6 +12,7 @@ module.exports = {
   /*
    ** Headers of the page
    */
+
   head: {
     title: 'SuperPass - Super Password Generator',
     meta: [
@@ -36,6 +43,12 @@ module.exports = {
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Bangers'
+      }
+    ],
+    script: [
+      {
+        src: `https://polyfill.io/v3/polyfill.min.js?features=${features}`,
+        body: true
       }
     ]
   },
@@ -75,7 +88,6 @@ module.exports = {
    ** Build configuration
    */
   build: {
-    vendor: ['babel-polyfill', 'eventsource-polyfill'],
     /*
      ** You can extend webpack config here
      */
