@@ -8,8 +8,7 @@ module.exports = {
    */
   head: {
     title: 'SuperPass - Super Password Generator',
-    meta: [
-      {
+    meta: [{
         charset: 'utf-8'
       },
       {
@@ -22,16 +21,14 @@ module.exports = {
         content: pkg.description
       }
     ],
-    link: [
-      {
+    link: [{
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
       },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
+        href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
       },
       {
         rel: 'stylesheet',
@@ -55,7 +52,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/vuetify'],
+  plugins: ['@/plugins/vuetify', {
+    src: '~plugins/googleanalytics.js',
+    ssr: false
+  }],
 
   /*
    ** Nuxt.js modules
@@ -78,12 +78,10 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend (config, ctx) {}
+    extend(config, ctx) {}
   },
   env: {
-    functions:
-      process.env.NODE_ENV === 'production'
-        ? process.env.API_URL
-        : 'http://localhost:9000'
+    functions: process.env.NODE_ENV === 'production' ?
+      process.env.API_URL : 'http://localhost:9000'
   }
 }
