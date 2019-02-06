@@ -3,6 +3,7 @@ const features = [
   'fetch',
   'Object.entries',
   'Object.values',
+  'Array.from',
   'IntersectionObserver'
 ].join('%2C')
 
