@@ -48,7 +48,7 @@ module.exports = {
     ],
     script: [
       {
-        src: `https://polyfill.io/v3/polyfill.min.js?features=${features}`,
+        src: `https://polyfill.io/v3/polyfill.min.js?flags=gated&features=default`,
         body: true
       }
     ]
@@ -92,7 +92,7 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend (config, ctx) {}
+    extend(config, ctx) {}
   },
   env: {
     functions:
