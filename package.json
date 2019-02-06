@@ -1,7 +1,7 @@
 {
   "name": "superpass",
   "version": "1.0.0",
-  "description": "My unreal Nuxt.js project",
+  "description": "Super password generator, easy to remember passwords.",
   "author": "Adam Hancock",
   "private": true,
   "scripts": {
