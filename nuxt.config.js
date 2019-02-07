@@ -4,7 +4,9 @@ const features = [
   'Object.entries',
   'Object.values',
   'Array.from',
-  'IntersectionObserver'
+  'IntersectionObserver',
+  'Math.cbrt',
+  'Array.prototype.findIndex'
 ].join('%2C')
 
 module.exports = {
