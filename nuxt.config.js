@@ -10,7 +10,9 @@ const features = [
 ].join('%2C')
 
 module.exports = {
-  mode: 'spa',
+  // mode: 'spa',
+  target: 'static',
+  ssr: false,
 
   /*
    ** Headers of the page
@@ -89,12 +91,16 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend (config, ctx) {}
+    extend(config, ctx) {}
   },
   env: {
     functions:
       process.env.NODE_ENV === 'production'
         ? process.env.API_URL
-        : 'http://localhost:9000'
+        : 'http://localhost:9000',
+    api:
+      process.env.NODE_ENV === 'production'
+        ? process.env.API2_URL
+        : 'http://localhost:5000'
   }
 }
